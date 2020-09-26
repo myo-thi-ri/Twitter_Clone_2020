@@ -8,6 +8,7 @@ body {
     width: 100%;
     min-height: 100vh;
     display: flex;
+    background: #0F0F11;
 }
 
 .navigation-container{
@@ -19,6 +20,10 @@ body {
 .navigation{
     color:white;
     margin-top: 30px;
+    position: fixed;
+    max-width: 100px;
+    min-width: 70px;
+    width: 20%;
     
 }
 
@@ -95,6 +100,7 @@ body {
     color:white;
     font-size: 30px;
     padding-left: 10px;
+    cursor: pointer;
 }
 
 
@@ -127,11 +133,12 @@ body {
 
 .tweets-trending ul li{
     color: #A5A5A6;
-    border-top: 1px solid #D8D8D8;
+    border-top: 0.5px solid #D8D8D8;
     padding-top: 8px;
     padding-bottom: 8px;
     padding-left: 20px;
     cursor: pointer;
+    font-weight: 600;
 }
 
 .tweets-trending ul{
@@ -152,5 +159,7 @@ body {
     border-radius: 40px;
     border: 1px solid #979797;
     overflow: hidden;
+    position: fixed;
 }
+
 
