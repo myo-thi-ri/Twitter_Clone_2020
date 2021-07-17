@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/c939d0e917.js" crossorigin="anonymous"></script>
+
+    <title>Document</title>
+    <style>
+        .main-container{
+            background-color: blue;
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+        }
+        .navigation-container{
+            width: 20%;
+            background-color: aqua;
+            max-width: 100px;
+            min-width: 70px;
+        }
+        .main{
+            background-color: violet;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .siderbar-container{
+            background-color: yellowgreen;
+            flex: 1;
+            display: flex;
+        }
+        .search-container{ 
+            /*background-color: red;*/
+            height: 50px;
+            margin: 20px;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid gray;
+        }
+        .lists-container{
+            background-color: black;
+            height: 500px;
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+        .tweet-list{
+            background-color: white;
+            height: 100px;
+            display: flex;
+            flex-direction: column;
+            margin: 10px;
+        }
+        .tweet-sidebar{
+            width: 200px;
+            background-color: brown;
+            height: 500px;
+            margin: 20px;
+        }
+        .logo{
+            color: white;
+            display: flex;
+            justify-content: center;
+            font-size: 42px;
+            margin-top: 30px;
+        }
+        .home-link{
+            color: blue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            margin-top: 30px;
+            border-right: 3px solid blue;
+            height: 40px;
+        }
+        .profile-container{
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        .profile{
+            width: 50px;
+            height: 50px;
+            background-color: white;
+            border-radius: 50%;
+            border: 1px solid #979797;
+        }
+        #user-search-input{
+            flex: 1;
+            height: 30px;
+            font-size: 30px;
+            background-color: transparent;
+            padding-left: 10px;
+            padding-right: 10px;
+            color: white;
+            border: none;
+            
+        }
+        .search-container input:focus{
+            outline: none;
+        }
+        .search-container i{
+            font-size: 30px;
+            color: white;
+            padding-left: 10px;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="navigation-container">
+            <div class="navigation">
+                <div class="logo">
+                    <i class="fab fa-twitter"></i>
+                </div>
+                <div class="home-link">
+                    <i class="fas fa-home"></i> 
+                    
+                </div>
+                <div class="profile-container">
+                    <div class="profile"></div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="main">
+            <div class="search-container">
+                <input id="user-search-input" type="text" placeholder="Search Twitter">
+                <i class="fas fa-search fa-flip-horizontal" onclick="getTwitterData()"></i>
+            </div>
+            <div class="lists-container">
+                <div class="tweet-list">
+                    <div class="tweet-user-info"></div>
+                    <div class="tweet-images-container">
+                        <div class="tweet-image"></div>
+                    </div>
+                    <div class="tweet-text-container">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus, magni debitis adipisci numquam totam voluptatibus! Suscipit laudantium repellendus, vitae doloribus ipsa impedit unde ducimus earum nesciunt inventore eius quisquam tempora?
+                    </div>
+                    <div class="tweet-date-container">
+                        20 hours ago
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="siderbar-container">
+            <div class="tweet-sidebar"></div>
+        </div>
+    </div>
+    
+</body>
+</html>
